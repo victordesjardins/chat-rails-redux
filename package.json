@@ -8,7 +8,13 @@
     "jquery": "^3.3.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
-    "react-dom": "^16.8.2"
+    "react-dom": "^16.8.2",
+    "react-emojione": "^5.0.1",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.6.0"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
