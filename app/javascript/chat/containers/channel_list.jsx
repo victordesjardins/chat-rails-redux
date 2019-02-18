@@ -13,10 +13,6 @@ class ChannelList extends Component {
     }
   }
 
-  // handleClick = (channel) => {
-  //   this.props.selectChannel(channel);
-  // }
-
   renderChannel = (channel) => {
     return (
       <li
@@ -50,7 +46,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectChannel, fetchMessages }, dispatch);
+  return bindActionCreators({ fetchMessages }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChannelList);

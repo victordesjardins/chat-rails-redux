@@ -14,10 +14,10 @@ User.destroy_all
 
 puts "creating 2 users"
 
-users = ["john@react.com", "franck@redux.com"]
+users = [{email: "john@react.com", nickname: "Johnny"}, {email: "franck@redux.com", nickname: "Francky"}]
 users.each do |user|
-  puts "creating #{user}"
-  User.create!(email: user, password: "123456")
+  puts "creating #{user[:nickname]}"
+  User.create!(email: user[:email], password: "123456", nickname: user[:nickname])
 end
 
 puts "Creating 3 channels"
